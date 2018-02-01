@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2827696691
+    locked: 0
+  - name: Gems
+    uniqueID: 1949333649
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

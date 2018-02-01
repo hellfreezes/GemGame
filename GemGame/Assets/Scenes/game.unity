@@ -166,7 +166,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.42
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -201,13 +201,41 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 192779020}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 666c1b97df9b8dd40be111afb01c309a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PPUScale: 1
-  PPU: 74
+  PPU: 54
+--- !u!1 &372336522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 372336523}
+  m_Layer: 0
+  m_Name: Table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372336523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372336522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.037, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597306077
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +263,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb16c3681d359984b95a77eff4499583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cellPrefab: {fileID: 1733624888676184, guid: bd87cb5a342c84942b69d3267ddf6148, type: 2}
+  table: {fileID: 372336523}
+  gemBase:
+  - {fileID: 21300000, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300002, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300004, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300006, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300008, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300010, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
+  - {fileID: 21300012, guid: 05b4d2b758c877b44bcc76451a87a118, type: 3}
 --- !u!4 &1597306079
 Transform:
   m_ObjectHideFlags: 0
@@ -258,7 +296,7 @@ GameObject:
   - component: {fileID: 1948014740}
   - component: {fileID: 1948014739}
   m_Layer: 0
-  m_Name: background
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,8 +333,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1467270605
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d2101e312cbd7549b35d855b0971e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
